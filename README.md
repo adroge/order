@@ -93,7 +93,7 @@ order.By(age, name).Sort(sliceOfPeopleStructures)
 
 ### Checking if a List is Sorted
 
-```sh
+```go
 list := []string{"a", "b"}
 sorted := order.By(func(l, r string) int {return order.Compare(l,r)}).IsSorted(list)
 ```
